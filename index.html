@@ -63,6 +63,8 @@
     .tp-expand { position:absolute; top:8px; right:8px; width:36px; height:36px; padding:0; border-radius:50%; border:1px solid oklch(78% 0.13 82 / 0.7); background:oklch(12% 0.012 50 / 0.72); color:oklch(92% 0.01 80); display:flex; align-items:center; justify-content:center; cursor:pointer; transition:background 0.2s ease, color 0.2s ease; }
     .tp-expand:hover, .tp-expand:focus-visible { background:oklch(78% 0.13 82); color:oklch(15% 0.015 50); outline:none; }
     .tp-expand svg { display:block; }
+    /* Hover devices already get a zoom cursor and pop effect; keep the icon for touch screens and keyboard focus. */
+    @media (hover: hover) { .tp-expand { opacity:0; pointer-events:none; } .tp-expand:focus-visible { opacity:1; } }
     #tp-lightbox-close { position:absolute; top:16px; right:16px; width:44px; height:44px; padding:0; border-radius:50%; border:1px solid oklch(45% 0.01 60); background:oklch(15% 0.015 50 / 0.8); color:oklch(92% 0.01 80); font-size:26px; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center; }
     #tp-lightbox-close:hover, #tp-lightbox-close:focus-visible { background:oklch(78% 0.13 82); color:oklch(15% 0.015 50); outline:none; }
     @media (max-width: 640px) {
