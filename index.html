@@ -49,6 +49,7 @@
     }
     @media (max-width: 640px) { .tp-nav-links { gap:18px !important; } }
     #tp-lightbox[hidden] { display:none !important; }
+    #tp-lightbox:focus { outline:none; }
     .tp-collage { position:relative; width:100%; padding-top:105%; }
     .tp-collage-wide { padding-top:52%; }
     .tp-collage-item { position:absolute; overflow:hidden; background:oklch(19% 0.014 50); border:1px solid oklch(32% 0.02 60); box-shadow:0 16px 32px oklch(0% 0 0 / 0.45); transition:scale 0.3s ease, translate 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
@@ -309,9 +310,9 @@
   </footer>
 
 </div>
-<div id="tp-lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer" style="position:fixed; inset:0; z-index:999; background:oklch(8% 0.01 50 / 0.92); display:flex; align-items:center; justify-content:center; padding:5%;">
+<div id="tp-lightbox" hidden tabindex="-1" role="dialog" aria-modal="true" aria-label="Photo viewer" style="position:fixed; inset:0; z-index:999; background:oklch(8% 0.01 50 / 0.92); display:flex; align-items:center; justify-content:center; padding:5%;">
   <button id="tp-lightbox-close" type="button" aria-label="Close photo">&times;</button>
-  <img id="tp-lightbox-img" src="" alt="" style="max-width:100%; max-height:100%; object-fit:contain; box-shadow:0 30px 60px oklch(0% 0 0 / 0.6);">
+  <img id="tp-lightbox-img" src="" alt="" style="max-width:100%; max-height:100%; object-fit:contain; border:1px solid oklch(78% 0.13 82 / 0.8); box-shadow:0 28px 52px oklch(0% 0 0 / 0.65), 0 0 0 1px oklch(78% 0.13 82 / 0.35);">
 </div>
 <script>
 (function () {
@@ -350,7 +351,8 @@
     lightboxImg.alt = img.alt;
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
-    closeBtn.focus();
+    // Keyboard users land on the close button; after a click or tap focus the dialog itself so no button looks highlighted.
+    (viaKeyboard ? closeBtn : lightbox).focus();
   }
   function closeLightbox() {
     if (lightbox.hidden) return;
