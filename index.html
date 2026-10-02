@@ -1,5 +1,20 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"><style>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twins Photography | Wedding, Portrait &amp; Family Photography</title>
+<meta name="description" content="Twins Photography captures weddings, portraits, family, maternity sessions, headshots and events with an authentic, timeless eye.">
+<meta name="theme-color" content="#140f0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 130 90'%3E%3Crect width='130' height='90' rx='14' fill='%23140f0c'/%3E%3Cg fill='none' stroke='%23e0ad45'%3E%3Cg transform='translate(8,18) scale(0.66) rotate(-18 50 45)'%3E%3Crect x='12' y='24' width='76' height='46' rx='7' stroke-width='8'/%3E%3Crect x='38' y='13' width='24' height='13' rx='3' stroke-width='8'/%3E%3Ccircle cx='50' cy='49' r='17' stroke-width='8'/%3E%3Ccircle cx='50' cy='49' r='9' stroke-width='4.6'/%3E%3C/g%3E%3Cg transform='translate(52,18) scale(0.66) rotate(18 50 45)'%3E%3Crect x='12' y='24' width='76' height='46' rx='7' stroke-width='8'/%3E%3Crect x='38' y='13' width='24' height='13' rx='3' stroke-width='8'/%3E%3Ccircle cx='50' cy='49' r='17' stroke-width='8'/%3E%3Ccircle cx='50' cy='49' r='9' stroke-width='4.6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+<link rel="canonical" href="https://twins-photography.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Twins Photography">
+<meta property="og:title" content="Twins Photography | Wedding, Portrait &amp; Family Photography">
+<meta property="og:description" content="Twins Photography captures weddings, portraits, family, maternity sessions, headshots and events with an authentic, timeless eye.">
+<meta property="og:url" content="https://twins-photography.vercel.app/">
+<meta property="og:image" content="https://twins-photography.vercel.app/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://twins-photography.vercel.app/images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"><style>
     body { margin: 0; background: oklch(15% 0.015 50); }
     a { color: oklch(78% 0.13 82); text-decoration: none; }
     a:hover { color: oklch(85% 0.12 82); }
@@ -32,6 +47,7 @@
     @media (max-width: 640px) {
       .tp-carousel-viewport { height:min(60vh, 460px); }
     }
+    @media (max-width: 640px) { .tp-nav-links { gap:18px !important; } }
     #tp-lightbox[hidden] { display:none !important; }
     .tp-collage { position:relative; width:100%; padding-top:105%; }
     .tp-collage-wide { padding-top:52%; }
@@ -67,10 +83,11 @@
       </svg>
       <div style="font-family:'Cormorant Garamond', Georgia, serif; font-weight:600; font-size:20px; letter-spacing:0.1em;">TWINS</div>
     </div>
-    <div style="display:flex; flex-direction:row; align-items:center; gap:32px; flex-wrap:wrap;">
+    <div class="tp-nav-links" style="display:flex; flex-direction:row; align-items:center; gap:32px; flex-wrap:wrap;">
       <a href="#services" style="font-size:12px; letter-spacing:0.1em; text-transform:uppercase;">Services</a>
       <a href="#portfolio" style="font-size:12px; letter-spacing:0.1em; text-transform:uppercase;">Portfolio</a>
       <a href="#about" style="font-size:12px; letter-spacing:0.1em; text-transform:uppercase;">About</a>
+      <a href="#contact" style="font-size:12px; letter-spacing:0.1em; text-transform:uppercase;">Contact</a>
     </div>
   </nav>
 
@@ -130,16 +147,16 @@
   <section id="about" class="tp-grid-2" style="width:100%; box-sizing:border-box; padding:100px 5%; border-top:1px solid oklch(26% 0.012 60); display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:64px; align-items:center;">
     <div class="tp-collage">
       <div class="tp-collage-item" style="top:0%; left:0%; width:62%; height:62%; z-index:2; transform:rotate(-4deg);">
-        <img src="images/about.jpg" alt="Maternity portrait in traditional white dress">
+        <img loading="lazy" decoding="async" src="images/about.jpg" alt="Maternity portrait in traditional white dress">
       </div>
       <div class="tp-collage-item" style="top:6%; left:46%; width:46%; height:46%; z-index:3; transform:rotate(5deg);">
-        <img src="images/about2.jpg" alt="Wedding couple portrait under trees">
+        <img loading="lazy" decoding="async" src="images/about2.jpg" alt="Wedding couple portrait under trees">
       </div>
       <div class="tp-collage-item" style="top:52%; left:4%; width:42%; height:42%; z-index:3; transform:rotate(6deg);">
-        <img src="images/about3.jpg" alt="Candid child portrait">
+        <img loading="lazy" decoding="async" src="images/about3.jpg" alt="Candid child portrait">
       </div>
       <div class="tp-collage-item" style="top:58%; left:50%; width:44%; height:40%; z-index:4; transform:rotate(-5deg);">
-        <img src="images/about4.jpg" alt="Graduation portrait">
+        <img loading="lazy" decoding="async" src="images/about4.jpg" alt="Graduation portrait">
       </div>
     </div>
     <div style="display:flex; flex-direction:column; gap:20px;">
@@ -162,19 +179,19 @@
       <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-weight:600; font-size:20px; letter-spacing:0.08em; text-transform:uppercase; color:oklch(78% 0.13 82);">Weddings</h3>
       <div class="tp-collage tp-collage-wide">
         <div class="tp-collage-item" style="top:6%; left:0%; width:28%; height:80%; z-index:2; transform:rotate(-3deg);">
-          <img src="images/wed1.jpg" alt="Wedding ceremony under floral arch" style="object-position:left center;">
+          <img loading="lazy" decoding="async" src="images/wed1.jpg" alt="Wedding ceremony under floral arch" style="object-position:left center;">
         </div>
         <div class="tp-collage-item" style="top:0%; left:24%; width:24%; height:46%; z-index:3; transform:rotate(5deg);">
-          <img src="images/wed2.jpg" alt="Bride and groom walking under trees">
+          <img loading="lazy" decoding="async" src="images/wed2.jpg" alt="Bride and groom walking under trees">
         </div>
         <div class="tp-collage-item" style="top:50%; left:22%; width:26%; height:50%; z-index:3; transform:rotate(-6deg);">
-          <img src="images/wed3.jpg" alt="Bride descending staircase">
+          <img loading="lazy" decoding="async" src="images/wed3.jpg" alt="Bride descending staircase">
         </div>
         <div class="tp-collage-item" style="top:10%; left:44%; width:30%; height:78%; z-index:2; transform:rotate(3deg);">
-          <img src="images/wed4.jpg" alt="Bridal party portrait by the water">
+          <img loading="lazy" decoding="async" src="images/wed4.jpg" alt="Bridal party portrait by the water">
         </div>
         <div class="tp-collage-item" style="top:0%; left:70%; width:30%; height:94%; z-index:4; transform:rotate(-4deg);">
-          <img src="images/wed5.jpg" alt="Ethiopian Orthodox wedding ceremony">
+          <img loading="lazy" decoding="async" src="images/wed5.jpg" alt="Ethiopian Orthodox wedding ceremony">
         </div>
       </div>
     </div>
@@ -183,19 +200,19 @@
       <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-weight:600; font-size:20px; letter-spacing:0.08em; text-transform:uppercase; color:oklch(78% 0.13 82);">Portraits</h3>
       <div class="tp-collage tp-collage-wide">
         <div class="tp-collage-item" style="top:6%; left:0%; width:28%; height:80%; z-index:2; transform:rotate(-3deg);">
-          <img src="images/port1.jpg" alt="Toddler portrait in pink tutu">
+          <img loading="lazy" decoding="async" src="images/port1.jpg" alt="Toddler portrait in pink tutu">
         </div>
         <div class="tp-collage-item" style="top:0%; left:24%; width:24%; height:46%; z-index:3; transform:rotate(5deg);">
-          <img src="images/port2.jpg" alt="Brothers embracing portrait">
+          <img loading="lazy" decoding="async" src="images/port2.jpg" alt="Brothers embracing portrait">
         </div>
         <div class="tp-collage-item" style="top:50%; left:22%; width:26%; height:50%; z-index:3; transform:rotate(-6deg);">
-          <img src="images/port3.jpg" alt="Maternity session with tapestry backdrop">
+          <img loading="lazy" decoding="async" src="images/port3.jpg" alt="Maternity session with tapestry backdrop">
         </div>
         <div class="tp-collage-item" style="top:10%; left:44%; width:30%; height:78%; z-index:2; transform:rotate(3deg);">
-          <img src="images/port4.jpg" alt="Kids portrait at holiday lights">
+          <img loading="lazy" decoding="async" src="images/port4.jpg" alt="Kids portrait at holiday lights">
         </div>
         <div class="tp-collage-item" style="top:0%; left:70%; width:30%; height:94%; z-index:4; transform:rotate(-4deg);">
-          <img src="images/port5.jpg" alt="Birthday celebration portrait">
+          <img loading="lazy" decoding="async" src="images/port5.jpg" alt="Birthday celebration portrait">
         </div>
       </div>
     </div>
@@ -204,19 +221,19 @@
       <h3 style="font-family:'Cormorant Garamond', Georgia, serif; font-weight:600; font-size:20px; letter-spacing:0.08em; text-transform:uppercase; color:oklch(78% 0.13 82);">Family</h3>
       <div class="tp-collage tp-collage-wide">
         <div class="tp-collage-item" style="top:6%; left:0%; width:28%; height:80%; z-index:2; transform:rotate(-3deg);">
-          <img src="images/fam1.jpg" alt="Kids birthday party candid">
+          <img loading="lazy" decoding="async" src="images/fam1.jpg" alt="Kids birthday party candid">
         </div>
         <div class="tp-collage-item" style="top:0%; left:24%; width:24%; height:46%; z-index:3; transform:rotate(5deg);">
-          <img src="images/fam2.jpg" alt="Family at holiday tree">
+          <img loading="lazy" decoding="async" src="images/fam2.jpg" alt="Family at holiday tree">
         </div>
         <div class="tp-collage-item" style="top:50%; left:22%; width:26%; height:50%; z-index:3; transform:rotate(-6deg);">
-          <img src="images/fam3.jpg" alt="Cultural family ceremony portrait">
+          <img loading="lazy" decoding="async" src="images/fam3.jpg" alt="Cultural family ceremony portrait">
         </div>
         <div class="tp-collage-item" style="top:10%; left:44%; width:30%; height:78%; z-index:2; transform:rotate(3deg);">
-          <img src="images/fam4.jpg" alt="Family group cultural portrait">
+          <img loading="lazy" decoding="async" src="images/fam4.jpg" alt="Family group cultural portrait">
         </div>
         <div class="tp-collage-item" style="top:0%; left:70%; width:30%; height:94%; z-index:4; transform:rotate(-4deg);">
-          <img src="images/fam5.jpg" alt="Maternity portrait in red gown">
+          <img loading="lazy" decoding="async" src="images/fam5.jpg" alt="Maternity portrait in red gown">
         </div>
       </div>
     </div>
@@ -278,7 +295,7 @@
       </svg>
       <div style="font-size:12px; color:oklch(50% 0.01 60);">&copy; 2026 Twins Photography</div>
     </div>
-    <a href="https://www.instagram.com/twinsstudio3" target="_blank" rel="noopener" style="font-size:12px; letter-spacing:0.05em; color:oklch(60% 0.01 60);">@twinsstudio3</a>
+    <div style="display:flex; flex-direction:row; gap:20px; flex-wrap:wrap;"><a href="https://www.facebook.com/share/1FE8EtJrBx/" target="_blank" rel="noopener" style="font-size:12px; letter-spacing:0.05em; color:oklch(60% 0.01 60);">Facebook</a><a href="https://www.instagram.com/twinsstudio3" target="_blank" rel="noopener" style="font-size:12px; letter-spacing:0.05em; color:oklch(60% 0.01 60);">@twinsstudio3</a></div>
   </footer>
 
 </div>
