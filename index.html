@@ -377,7 +377,9 @@
     btn.className = 'tp-expand';
     btn.setAttribute('aria-label', 'View larger: ' + img.alt);
     btn.innerHTML = expandIcon;
-    btn.addEventListener('click', function () { openLightbox(btn, img); });
+    // The whole tile opens the viewer; the icon click bubbles up to the tile.
+    tile.style.cursor = 'zoom-in';
+    tile.addEventListener('click', function () { openLightbox(btn, img); });
     tile.appendChild(btn);
   });
 
